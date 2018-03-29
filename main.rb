@@ -10,9 +10,11 @@ earth.add(earth)
 sun = Star.new('Sun', 1.989 * 10 ** 30, 'G-type')
 earth.add(sun)
 
-earth_moon = Moon.new("Earth's Moon", 7.35 *mja 10 ** 22, 27, 'Earth')
+earth_moon = Moon.new("Earth's Moon", 7.35 * 10 ** 22, 27, earth)
 earth.add(earth_moon)
 
-# puts System.bodies.inspect
+puts earth_moon.inspect
 
-puts System.total_mass
+# puts System.bodies
+
+# puts System.total_mass
