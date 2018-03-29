@@ -1,11 +1,20 @@
 require_relative 'system'
 require_relative 'body'
 
-def Planet < Body
+class Planet < Body
 
-  def initialize(name, mass)
-    super (name, mass)
+  def initialize(name, mass, day, year)
+    super(name, mass)
+    @day = day
+    @year = year
   end
 
+  def day
+    @day
+  end
+
+  def year
+
+  end
 
 end

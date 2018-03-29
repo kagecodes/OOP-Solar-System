@@ -1,10 +1,20 @@
 require_relative 'system'
 require_relative 'body'
 
-def Moon < Body
+class Moon < Body
 
-  def initialize(name, mass)
-    super (name, mass)
+  def initialize(name, mass, month, planet)
+    super(name, mass)
+    @month = month
+    @planet = planet
+  end
+
+  def month
+    @month
+  end
+
+  def planet
+    @planet
   end
 
 

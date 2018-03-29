@@ -1,10 +1,18 @@
 require_relative 'system'
 
-def Body < System 
+class Body < System
 
   def initialize(name, mass)
     @name = name
     @mass = mass
+  end
+
+  def name
+    @name
+  end
+
+  def mass
+    @mass
   end
 
 
