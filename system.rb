@@ -2,6 +2,14 @@ class System
 
   @@bodies = []
 
+  def initialize(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+
   def add(celestial_body)
     @@bodies.push(celestial_body)
   end
